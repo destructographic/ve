@@ -7,7 +7,6 @@ preloadAssets()
   .then(() => {
     populateTitleScreen();
     loaderCurtain('hide');
-    // gameLoop();
   })
   .catch(() => {
     console.error('Error in asset preload.');
@@ -33,13 +32,35 @@ function populateTitleScreen() {
 
     // add event listener to startGameText
     startGameText.addEventListener('click', gameLoop);
+
+
+    // add special link to *real* version (after deadline)
+    const textLink = document.createElement('a');
+    textLink.href = 'https://destructographic.com/vector-eclipse';
+    textLink.textContent = 'real version HERE';
+    textLink.style.color = 'var(--purple)';
+    textLink.style.fontSize = '12px';
+    textLink.style.position = 'absolute';
+    textLink.style.bottom = '10px';
+    textLink.style.left = '50%';
+    textLink.style.transform = 'translateX(-50%)';
+    gameArea.appendChild(textLink);
+
   }
-  
 
 
 
 
 
 function gameLoop() {
-  console.log("called: gameLoop()");
+  // console.log("called: gameLoop()");
+  const titleLogo = document.getElementById('title-logo');
+  const startGameText = document.querySelector('.start-game-text');
+
+  // hide titleScreen content
+  titleLogo.style.display = 'none';
+  startGameText.style.display = 'none';
+
+  // rest of game here
+  
 }
