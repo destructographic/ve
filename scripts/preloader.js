@@ -1,9 +1,9 @@
 // declare an array of assets for preload
 const assetsForPreload = [
-    { src: 'https://destructographic.github.io/ve/asssets/red-circle.svg', type: 'image' },
-    { src: 'https://destructographic.github.io/ve/assets/space_bg1.png', type: 'image' },
-    { src: 'https://destructographic.github.io/ve/assets/space_bg_dust1.png', type: 'image' },
-    { src: 'https://destructographic.github.io/ve/assets/ve_logo_dither.png', type: 'image' },
+    { src: 'asssets/red-circle.svg', type: 'image' },
+    { src: 'assets/space_bg1.png', type: 'image' },
+    { src: 'assets/space_bg_dust1.png', type: 'image' },
+    { src: 'assets/ve_logo_dither.png', type: 'image' },
    // { src: 'assets/track01.mp3', type: 'sound' },
    // { src: 'assets/track02.mp3', type: 'sound' },
  ];
