@@ -63,27 +63,3 @@ function preloadAssets() {
     });
   });
 }
-
-
-
-
-
-// demonstration function which places the fully-loaded images into image-container 
-function displayPreloadedImages() {
-  const imageContainer = document.getElementById('image-container');
-  console.log("called: displayPreloadedImages");
-  // loop through preloadedAssets
-  for (const src in preloadedAssets) {
-    if (preloadedAssets.hasOwnProperty(src)) {
-      // for every image make an <img> element
-      const imgElement = document.createElement('img');
-      // set the src attribute using the preloaded asset
-      imgElement.src = src;
-      // put the <img> element in the container
-      imageContainer.appendChild(imgElement);
-    }
-  }
-}
-
-
-

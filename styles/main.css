@@ -25,7 +25,7 @@ body {
     color: var(--offwhite);
     border: 5px solid var(--purple);
     font-size: 30px;
-    /* font-family: 'Press Start 2P'; */
+    font-family: 'Press Start 2P';
     /* font-family: '8BIT WONDER', sans-serif; */
     padding-top: 80px;
     text-align: center;

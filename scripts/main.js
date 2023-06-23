@@ -20,16 +20,13 @@ preloadAssets()
   function populateTitleScreen() {
     const gameArea = document.getElementById('game-area');
   
-    // Set the background images
     gameArea.style.backgroundImage = `url(${preloadedAssets['assets/space_bg1.png'].src}), url(${preloadedAssets['assets/space_bg_dust1.png'].src})`;
   
-    // Create and set the title logo image
     const titleLogo = document.createElement('img');
     titleLogo.id = 'title-logo';
     titleLogo.src = preloadedAssets['assets/ve_logo_dither.png'].src;
     gameArea.appendChild(titleLogo);
   
-    // Create and set the start game text
     const startGameText = document.createElement('p');
     startGameText.textContent = 'START GAME';
     gameArea.appendChild(startGameText);
