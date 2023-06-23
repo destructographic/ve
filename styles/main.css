@@ -3,10 +3,12 @@
     --offwhite: #a4a3db;
 }
 
+
 body {
     background: black;
     overflow: hidden;
 }
+
 
 #main-content {
     display: flex;
@@ -26,47 +28,8 @@ body {
     border: 5px solid var(--purple);
     font-size: 30px;
     font-family: 'Press Start 2P';
-    /* font-family: '8BIT WONDER', sans-serif; */
     padding-top: 80px;
     text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-#main-canvas {
-    //background: grey;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border: 5px solid white;
-    opacity: 0.75;
-    background-image: url("/assets/ve_logo_dither.png");
-    background-repeat: no-repeat;
-}
-
-
-#player, #background, #enemy {
-    display: none;
-}
-
-
-
-#ve-title {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
