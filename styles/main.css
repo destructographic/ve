@@ -37,3 +37,10 @@ body {
     // overflow: hidden;
   }
   
+
+ 
+.start-game-text:hover {
+    color: var(--purple);
+    cursor: pointer;
+  }
+  
