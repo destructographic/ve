@@ -1,6 +1,8 @@
 :root {
     --purple:   #1f06d6;
     --offwhite: #a4a3db;
+    --width: 1280px;
+    --height: 720px;
 }
 
 
@@ -21,15 +23,17 @@ body {
 
 
 #game-area {
-    width: 1280px;
-    height: 720px;
+    min-width: var(--width);
+    max-width: var(--width);
+    min-height: var(--height);
+    max-height: var(--height);
     opacity: 1.0;
     color: var(--offwhite);
     border: 5px solid var(--purple);
-    font-size: 30px;
     font-family: 'Press Start 2P';
+    font-size: 30px;
     padding-top: 80px;
     text-align: center;
-}
-
-
+    // overflow: hidden;
+  }
+  
