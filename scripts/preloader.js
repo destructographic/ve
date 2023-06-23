@@ -1,6 +1,6 @@
 // declare an array of assets for preload
 const assetsForPreload = [
-    { src: 'asssets/red-circle.svg', type: 'image' },
+    { src: 'assets/red-circle.svg', type: 'image' },
     { src: 'assets/space_bg1.png', type: 'image' },
     { src: 'assets/space_bg_dust1.png', type: 'image' },
     { src: 'assets/ve_logo_dither.png', type: 'image' },
@@ -52,7 +52,6 @@ function preloadAssets() {
       element.addEventListener('load', () => {
         preloadedAssets[asset.src] = element;
         assetsLoaded++;
-        console.log("loaded: " + asset); // added this
         if (assetsLoaded === totalAssets) {
           resolve();
         }
